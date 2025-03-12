@@ -13,6 +13,11 @@ namespace BetterDecorador
         /// <param name="args">The arguments to use in certain parameters</param>
         private static void Main(string[] args)
         {
+            if (args.Length < 3)
+            {
+                Console.WriteLine(Decor("User did not specify args !", '=', 3));
+                return;
+            }
             Console.WriteLine(Decor(args[0],char.Parse(args[1]),int.Parse(args[2]))); //Print Decor
         }
 
@@ -31,6 +36,10 @@ namespace BetterDecorador
                 characters += decoration;
             }
             return $"{characters} {phrase} {characters}";
+        }
+        private static string Decor()
+        {
+            return Decor("User did not specify args !", '=', 3);
         }
     }
 }

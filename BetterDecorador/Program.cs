@@ -11,7 +11,7 @@ namespace BetterDecorador
 
         private static string Decor(string x, char y, int z)
         {
-
+            string characters = "";
             for (int i = 0; i < z; i++)
             {
                 characters += y;

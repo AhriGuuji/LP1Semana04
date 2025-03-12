@@ -2,6 +2,9 @@
 
 namespace BetterDecorador
 {
+    /// <summary>
+    /// This program is used to create a decorated string
+    /// </summary>
     public class Program
     {
         /// <summary>
@@ -10,7 +13,7 @@ namespace BetterDecorador
         /// <param name="args">The arguments to use in certain parameters</param>
         private static void Main(string[] args)
         {
-            Console.WriteLine(Decor(args[0],char.Parse(args[1]),int.Parse(args[2])));
+            Console.WriteLine(Decor(args[0],char.Parse(args[1]),int.Parse(args[2]))); //Print Decor
         }
 
 /// <summary>
